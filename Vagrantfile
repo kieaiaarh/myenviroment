@@ -31,7 +31,7 @@ Vagrant.configure(2) do |config|
     #exit
 
     # git
-    sudo yum install -y make curl-devel gcc openssl-devel expat-devel cpan gettext  asciidoc xmlto
+    sudo yum install -y make bzip2-devel curl-devel gcc openssl-devel expat-devel cpan gettext  asciidoc xmlto
     cd /usr/local/src/
     sudo wget https://www.kernel.org/pub/software/scm/git/git-2.3.2.tar.gz
     sudo tar -zxf git-2.3.2.tar.gz
