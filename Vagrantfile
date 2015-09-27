@@ -18,8 +18,11 @@ Vagrant.configure(2) do |config|
     # timezone
     cp -p /usr/share/zoneinfo/Japan /etc/localtime
 
+    # selinux
+    sudo setenforce permissive
+
     # add user
-    sudo useradd kieaiaarh
+    #sudo useradd kieaiaarh
     #sudo su - kieaiaarh
 
     # ssh
